@@ -9,7 +9,9 @@
         <input type="text" id="new_text">
         <button onclick="add()"> Add </button>
       </form>
-      <ul id="todo"></ul> //tempat mendaftarkan list
+      
+      <!--  tempat mendaftarkan list -->
+      <ul id="todo"></ul>
     </div>
     
     <style>
@@ -24,7 +26,7 @@
         let newText = document.getElementById('new_text')
         
         //tambahkan list baru ke ul
-        let newTodo = "<li> <span onclick'toggle(this)'>" + newText.value + "<span>" +
+        let newTodo = "<li> <span onclick='toggle(this)'>" + newText.value + "<span>" +
                       "<span> [x] </span>" +
                       "<li>"
         todo.insertAdjacentHTML('afterbegin', newTodo)
