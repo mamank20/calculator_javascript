@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>To Do Program</title>
+  </head>
+  <body>
+    <h1>To Do Program</h1>
+    <div class="container">
+      <form action="#">
+        <input type="text" id="new_text">
+        <button onclick="add()"> Add </button>
+      </form>
+      <ul id="todo"></ul> //tempat mendaftarkan list
+    </div>
+    
+    <style>
+      .done {
+        text-decoration: line-through;
+      }
+    </style>
+    
+    <script>
+      function add() {
+        //ambil nilai dari textnya
+        let newText = document.getElementById('new_text')
+        
+        //tambahkan list baru ke ul
+        let newTodo = "<li> <span onclick'toggle(this)'>" + newText.value + "<span>" +
+                      "<span> [x] </span>" +
+                      "<li>"
+        todo.insertAdjacentHTML('afterbegin', newTodo)
+        
+        //kosongkan fieldnya
+        newText.value = ""
+      }
+      
+      function toggle(el) {
+        el.classList.toggle('done')
+      }
+    </script>
+    
+  </body>
+  <footer></footer>
+</html
