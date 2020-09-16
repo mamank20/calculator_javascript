@@ -7,7 +7,7 @@
     <div class="container">
       <form action="#">
         <input type="text" id="new_text">
-        <button onclick="add()"> Add </button>
+        <button onclick="add()">Add</button>
       </form>
       
       <!--  tempat mendaftarkan list -->
@@ -21,6 +21,8 @@
     </style>
     
     <script>
+      const todo = document.getElementById('todo')
+      
       function add() {
         //ambil nilai dari textnya
         let newText = document.getElementById('new_text')
